@@ -1,4 +1,4 @@
-package main.java.graph.slidingwindow;
+package main.java.slidingwindow;
 
 public class MaxConsecutiveOnes {
     public static void main(String[] args) {
