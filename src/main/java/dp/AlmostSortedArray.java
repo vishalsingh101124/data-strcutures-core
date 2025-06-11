@@ -1,6 +1,6 @@
 package main.java.dp;
 
-import java.util.Arrays;
+import java.util.*;
 
 /**
  * - An array is integer is almost sorted if at most one element can be deleted from it to make it perfectly sorted,
@@ -18,7 +18,6 @@ public class AlmostSortedArray {
 
 
     }
-
     static int almostSortedArray(int[] nums){
         int n=nums.length;
         int dp[]=new int[n];
