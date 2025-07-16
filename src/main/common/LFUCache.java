@@ -17,8 +17,8 @@ public class LFUCache {
 
     int minFreq;
     int capacity;
-    Map<Integer,Node> keyToNode =new HashMap<>();
-    Map<Integer,LinkedHashSet<Integer>> freqToKeys=new HashMap<>();
+    Map<Integer,Node> keyToNode;
+    Map<Integer,LinkedHashSet<Integer>> freqToKeys;
     public LFUCache(int capacity){
         this.capacity=capacity;
         this.minFreq=0;
