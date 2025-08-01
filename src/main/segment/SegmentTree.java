@@ -28,8 +28,8 @@ public class SegmentTree {
     }
     int queryUtil(int start,int end,int l,int r,int node){
 
-        if (r < start || l > end) return 0;
-        if (l <= start && end <= r) return this.segmentTree[node];
+        if (start >r || end<l) return 0;
+        if ( start>=l && end <= r) return this.segmentTree[node];
 
         int mid=(start+end)/2;
         int leftSum = queryUtil(start, mid, l, r, 2 * node + 1);
